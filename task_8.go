@@ -6,7 +6,7 @@ import (
 )
 
 func invertBit(number int, bitNum int)(int,error){
-	bitMask:=1<<(bitNum-1) //маска для получения числа с битом равным единица на позиции которую будем менять
+	bitMask := 1<<(bitNum-1) //маска для получения числа с битом равным единица на позиции которую будем менять
 
 	if len(fmt.Sprintf("%b", number)) < len(fmt.Sprintf("%b", bitMask)){ //проверяю что в битовой форме есть необходимый разряд
 		return number, errors.New(fmt.Sprintf("В двоичной записи числа %v(%b) нет %v разряда", number, number, bitNum))

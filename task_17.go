@@ -39,7 +39,7 @@ func binarySearch(slice []int, findInt int) (result bool) {
 func main() {
 	sl := []int{15, 18, 9, 1, 14, 100}
 
-	findInt := 500
+	findInt := 15
 
 	fmt.Printf("Искомое число - %v\n", findInt)
 	fmt.Printf("Результат поиска - %v\n", binarySearch(sl, findInt))

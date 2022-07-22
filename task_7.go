@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// sync.Map решает пробелму cache contention в стандартной библиотеке 
+	// sync.Map решает проблему cache contention в стандартной библиотеке 
 	// для таких случаев, когда	ключи в map стабильны (не обновляются часто)
 	// и происходит намного больше чтений, чем записей
 	var testMap sync.Map
@@ -17,7 +17,7 @@ func main() {
 
 		go func(id int) {
 			for i := 0; i < 10; i++ {
-				testMap.LoadOrStore(i, i)
+				testMap.LoadOrStore(i, i)  // метод, позволяющий установить значение по ключу в случае если оно еще не установлено
 			}
 
 			fmt.Println(id)

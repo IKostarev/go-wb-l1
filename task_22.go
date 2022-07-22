@@ -7,7 +7,7 @@ import (
 
 func main() {
 	a := big.NewInt(2 << 25)
-	b := big.NewInt(2<<25 + 10)
+	b := big.NewInt(2 << 25 + 10)
 	fmt.Printf("Число a: %v\t b: %v\n", a, b)
 
 	res := big.NewInt(0)

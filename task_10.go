@@ -12,7 +12,7 @@ func sorted(temp float32) string {
 	return fmt.Sprintf("границы от %.1f до %.1f", float32(x * 10), float32(x + 1) * 10) //нахожу границы разделов температуры
 }
 
-func getTemp( temps []float32) map[string][]float32 {
+func getTemp(temps []float32) map[string][]float32 {
 	tempMap := make(map[string][]float32) 
 
 	for _, i := range temps { //записываю в мапу границу + значения 

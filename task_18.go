@@ -31,7 +31,7 @@ func doIter(num int) {
 		}()
 	}
 
-	if num%10 > 0 { //если поделилось не нацело, то учитываю это
+	if num % 10 > 0 { //если поделилось не нацело, то учитываю это
 		wg.Add(1)
 
 		go func() {
@@ -48,7 +48,7 @@ func doIter(num int) {
 }
 
 func main() {
-	num := 999
+	num := 500
 
 	doIter(num)
 }

@@ -6,12 +6,12 @@ import "fmt"
 type Human struct {
 	//список полей
 	Name string
-	Age int
+	Age  int
 }
 
 //инициализация структуры Action
 type Action struct {
-	Human //в структуре Action получаем доступ к полям и методам структуры Human
+	Human   //в структуре Action получаем доступ к полям и методам структуры Human
 	isCoder bool
 }
 
@@ -19,7 +19,6 @@ type Action struct {
 func (h *Human) PrinterHuman() string {
 	return fmt.Sprint("Name - ", h.Name, ", ", "Age - ", h.Age)
 }
-
 
 func main() {
 	var a Action
